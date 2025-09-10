@@ -1,0 +1,73 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
+import Logo from "../Logo";
+
+export default function Header() {
+  return (
+    <div>
+      <header className="absolute z-50 py-4 top-0 left-0 w-full">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-10">
+              <a href="/">
+                <Logo />
+              </a>
+
+              <nav className="hidden md:flex items-center py-1 px-3 gap-2">
+                <a href="#" className="flex items-center gap-1 text-sm text-slate-600 px-3 py-2 font-medium hover:text-slate-900 hover:bg-primary/20 duration-100 rounded-full">
+                  Categories
+                  <Icon icon="jam:chevron-down" width="16" height="16"/>
+                </a>
+
+                <a href="#" className="flex items-center gap-2 text-sm text-slate-600 px-3 py-2 font-medium hover:text-slate-900 hover:bg-primary/20 duration-100 rounded-full">
+                  Dimmo AI
+                  <svg width="50" height="18" viewBox="0 0 50 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="path-1-inside-1_3_35" fill="white">
+                  <path d="M0.897461 4C0.897461 1.79086 2.68832 0 4.89746 0H45.8975C48.1066 0 49.8975 1.79086 49.8975 4V14C49.8975 16.2091 48.1066 18 45.8975 18H4.89746C2.68832 18 0.897461 16.2091 0.897461 14V4Z"/>
+                  </mask>
+                  <path d="M0.897461 4C0.897461 1.79086 2.68832 0 4.89746 0H45.8975C48.1066 0 49.8975 1.79086 49.8975 4V14C49.8975 16.2091 48.1066 18 45.8975 18H4.89746C2.68832 18 0.897461 16.2091 0.897461 14V4Z" fill="#FCA7CB" fillOpacity="0.31"/>
+                  <g clipPath="url(#paint0_angular_3_35_clip_path)" data-figma-skip-parse="true" mask="url(#path-1-inside-1_3_35)"><g transform="matrix(-0.00899858 -0.000160036 0.000160036 -0.00899858 25.3975 9)"><foreignObject x="-2852.64" y="-2852.64" width="5705.29" height="5705.29"><div xmlns="http://www.w3.org/1999/xhtml" style={{background:"conic-gradient(from 90deg,rgba(252, 167, 203, 0) 0deg,rgba(255, 104, 168, 1) 1.32615deg,rgba(252, 167, 203, 0) 360deg)",height:"100%",width:"100%",opacity:1}}></div></foreignObject></g></g><path d="M4.89746 0V1H45.8975V0V-1H4.89746V0ZM49.8975 4H48.8975V14H49.8975H50.8975V4H49.8975ZM45.8975 18V17H4.89746V18V19H45.8975V18ZM0.897461 14H1.89746V4H0.897461H-0.102539V14H0.897461ZM4.89746 18V17C3.24061 17 1.89746 15.6569 1.89746 14H0.897461H-0.102539C-0.102539 16.7614 2.13604 19 4.89746 19V18ZM49.8975 14H48.8975C48.8975 15.6569 47.5543 17 45.8975 17V18V19C48.6589 19 50.8975 16.7614 50.8975 14H49.8975ZM45.8975 0V1C47.5543 1 48.8975 2.34315 48.8975 4H49.8975H50.8975C50.8975 1.23858 48.6589 -1 45.8975 -1V0ZM4.89746 0V-1C2.13604 -1 -0.102539 1.23858 -0.102539 4H0.897461H1.89746C1.89746 2.34315 3.24061 1 4.89746 1V0Z" mask="url(#path-1-inside-1_3_35)"/>
+                  <path d="M10.3132 10.1437C10.4109 10.2134 10.5278 10.2508 10.6477 10.2506C10.7676 10.2505 10.8845 10.2129 10.982 10.1431C11.0794 10.0703 11.1535 9.97057 11.1951 9.85624L11.412 9.18937C11.464 9.03225 11.552 8.88946 11.669 8.77238C11.786 8.6553 11.9287 8.56716 12.0857 8.51499L12.7645 8.29437C12.8783 8.25354 12.9764 8.17797 13.045 8.07835C13.1135 7.97872 13.149 7.86007 13.1465 7.73917C13.1439 7.61827 13.1034 7.50123 13.0307 7.40459C12.958 7.30795 12.8568 7.2366 12.7414 7.20062L12.0732 6.98437C11.916 6.93243 11.7731 6.84446 11.6559 6.72748C11.5387 6.6105 11.4505 6.46775 11.3982 6.31062L11.1776 5.63312C11.1376 5.52124 11.0639 5.42451 10.9666 5.35624C10.8693 5.28797 10.7533 5.25151 10.6345 5.25187C10.514 5.25135 10.3963 5.28873 10.2982 5.35871C10.2 5.42869 10.1264 5.52775 10.0876 5.64187L9.86511 6.32312C9.81286 6.47559 9.7268 6.61428 9.61337 6.72879C9.49994 6.8433 9.36208 6.93067 9.21011 6.98437L8.53261 7.20374C8.41943 7.24374 8.32154 7.31805 8.25259 7.41632C8.18365 7.51458 8.14707 7.63191 8.14797 7.75195C8.14886 7.87199 8.18718 7.98876 8.25758 8.08599C8.32799 8.18322 8.42697 8.25606 8.54074 8.29437L9.20761 8.51124C9.36506 8.56385 9.50809 8.6524 9.62536 8.76989C9.74263 8.88738 9.83092 9.03057 9.88324 9.18812L10.1032 9.86312C10.1426 9.97562 10.2164 10.0737 10.3139 10.1431M13.4826 12.6562C13.5673 12.7165 13.6687 12.7488 13.7726 12.7487C13.8776 12.7477 13.9796 12.714 14.0646 12.6525C14.1496 12.5909 14.2133 12.5044 14.247 12.405L14.402 11.9287C14.4351 11.83 14.4914 11.7394 14.5645 11.6656C14.6376 11.5919 14.7282 11.5362 14.827 11.5037L15.3095 11.3462C15.4093 11.312 15.4957 11.2471 15.5564 11.1608C15.617 11.0745 15.6488 10.9712 15.6473 10.8657C15.6457 10.7602 15.6107 10.6579 15.5475 10.5735C15.4842 10.4891 15.3959 10.4268 15.2951 10.3956L14.8176 10.24C14.7189 10.2069 14.6292 10.1515 14.5554 10.0779C14.4817 10.0044 14.426 9.91487 14.3926 9.81624L14.2351 9.33249C14.2012 9.23315 14.1369 9.14698 14.0513 9.08621C13.9658 9.02545 13.8632 8.99315 13.7583 8.99391C13.6533 8.99468 13.5512 9.02845 13.4665 9.09045C13.3818 9.15245 13.3188 9.23954 13.2864 9.33937L13.132 9.81562C13.1001 9.91353 13.0461 10.0028 12.9741 10.0764C12.9022 10.15 12.8142 10.206 12.717 10.24L12.232 10.3981C12.1586 10.4236 12.0921 10.4659 12.0379 10.5216C11.9837 10.5773 11.9432 10.6449 11.9197 10.719C11.8961 10.793 11.8902 10.8716 11.9023 10.9484C11.9144 11.0251 11.9443 11.098 11.9895 11.1612C12.0514 11.2487 12.1389 11.3144 12.2395 11.3487L12.7164 11.5031C12.8154 11.5365 12.9054 11.5924 12.9791 11.6665C13.0529 11.7406 13.1084 11.8308 13.1414 11.93L13.2995 12.4137C13.3337 12.5115 13.3975 12.5963 13.482 12.6562" fill="#0A2562"/>
+                  <path d="M22.7605 12H21.6265V5.421H22.7695L25.8565 10.083V5.421H26.9905V12H25.8565L22.7605 7.338V12ZM32.9828 12H28.8968V5.421H32.9828V6.483H30.0488V8.175H32.6768V9.192H30.0488V10.938H32.9828V12ZM36.0497 12L34.0877 5.421H35.2847L36.3287 8.895C36.4277 9.255 36.5267 9.624 36.6257 10.2C36.7337 9.615 36.8327 9.273 36.9497 8.895L37.9847 5.421H39.2537L40.2707 8.895C40.3787 9.264 40.4777 9.642 40.5857 10.2C40.7117 9.588 40.8017 9.237 40.9007 8.904L41.9627 5.421H43.1327L41.1347 12H40.0187L38.6147 7.212L37.1837 12H36.0497Z" fill="#0A2562"/>
+                  <defs>
+                  <clipPath id="paint0_angular_3_35_clip_path"><path d="M4.89746 0V1H45.8975V0V-1H4.89746V0ZM49.8975 4H48.8975V14H49.8975H50.8975V4H49.8975ZM45.8975 18V17H4.89746V18V19H45.8975V18ZM0.897461 14H1.89746V4H0.897461H-0.102539V14H0.897461ZM4.89746 18V17C3.24061 17 1.89746 15.6569 1.89746 14H0.897461H-0.102539C-0.102539 16.7614 2.13604 19 4.89746 19V18ZM49.8975 14H48.8975C48.8975 15.6569 47.5543 17 45.8975 17V18V19C48.6589 19 50.8975 16.7614 50.8975 14H49.8975ZM45.8975 0V1C47.5543 1 48.8975 2.34315 48.8975 4H49.8975H50.8975C50.8975 1.23858 48.6589 -1 45.8975 -1V0ZM4.89746 0V-1C2.13604 -1 -0.102539 1.23858 -0.102539 4H0.897461H1.89746C1.89746 2.34315 3.24061 1 4.89746 1V0Z" mask="url(#path-1-inside-1_3_35)"/></clipPath></defs>
+                  </svg>
+                </a>
+
+                <a href="#" className="flex items-center gap-1 text-sm text-slate-600 px-3 py-2 font-medium hover:text-slate-900 hover:bg-primary/20 duration-100 rounded-full">
+                  Resources
+                  <Icon icon="jam:chevron-down" width="16" height="16"/>
+                </a>
+
+                <a href="#" className="flex items-center gap-1 text-sm text-slate-600 px-3 py-2 font-medium hover:text-slate-900 hover:bg-primary/20 duration-100 rounded-full">
+                  Feature Library
+                </a>
+              </nav>
+            </div>
+
+            <div className="hidden md:flex items-center gap-2">
+              <button type="button" className="cursor-pointer flex items-center gap-2 text-sm text-slate-600 font-medium px-4 py-2  bg-white/20 backdrop-blur-xs border border-slate-300 hover:bg-white/50 duration-300 rounded-full">
+                <Icon icon="material-symbols:search" width="16" height="16" className="text-slate-900"/>
+                Search...
+              </button>
+
+              <a href="#" className="text-sm text-slate-900 font-medium px-4 py-2 bg-white/20 backdrop-blur-xs border border-slate-300 hover:bg-white/50 duration-300 rounded-full">
+                Register Company
+              </a>
+              <a href="#" className="text-sm text-slate-900 font-medium px-4 py-2 bg-primary hover:bg-primary/80 duration-300 rounded-full">
+                Login/Sign Up
+              </a>
+            </div>
+
+            <nav className="md:hidden relative">
+              <button className="relative flex z-50 h-8 w-8 flex-col items-center justify-center space-y-1.5">
+                <span className="h-0.5 w-6 rounded-md bg-slate-900 duration-300"></span>
+                <span className="h-0.5 w-6 rounded-md bg-slate-900 duration-300"></span>
+                <span className="h-0.5 w-6 rounded-md bg-slate-900 duration-300"></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
+}

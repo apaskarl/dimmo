@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+body {
+  background-color: #fffbfd;
+}
+
+@theme {
+  /* Colors */
+  --color-primary: #ffa2c9;
+
+  /* Font */
+  --font-sans: "Satoshi", sans-serif;
+  --font-mono: "SFMono", monospace;
+}
+
+/* Satoshi */
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CircularStd */
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd-Book.ttf") format("truetype");
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CircularStd";
+  src: url("/fonts/CircularStd-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SFMono */
+@font-face {
+  font-family: "SFMono";
+  src: url("/fonts/SFMonoSemibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
