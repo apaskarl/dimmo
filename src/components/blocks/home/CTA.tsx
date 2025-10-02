@@ -1,8 +1,8 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import Button from "@/components/ui/Button";
 
-export default function NextStep() {
+export default function CTA() {
   return (
-    <section id="next-step">
+    <section id="cta" className="relative py-10">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="relative w-full overflow-hidden rounded-3xl bg-[#FEE4EF] p-10 md:p-20">
           <div className="relative z-20 mx-auto flex w-full max-w-2xl flex-col items-center gap-10">
@@ -18,14 +18,8 @@ export default function NextStep() {
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-2">
-              <a href="#" className="bg-primary hover:bg-primary/80 flex items-center gap-3 rounded-full px-8 py-3 text-sm font-medium text-slate-900 duration-300 md:text-base">
-                Book Your Free Tech Stack Audit
-                <Icon icon="tabler:arrow-right" width="20" height="20" />
-              </a>
-              
-              <a href="#" className="flex items-center gap-3 rounded-full border border-slate-300 bg-white/10 px-8 py-3 text-sm font-medium text-slate-900 backdrop-blur-xs duration-300 hover:bg-white/50 md:text-base">
-                View GTM Marketplace
-              </a>
+              <Button href="#" label="Book Your Free Tech Stack Audit" arrow primary />
+              <Button href="#" label="View GTM Marketplace" />
             </div>
           </div>
 

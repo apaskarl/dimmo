@@ -1,6 +1,6 @@
 export default function TheProblem() {
   return (
-    <section id="the-problem" className="py-20">
+    <section id="the-problem" className="relative py-12 md:py-20">
       <div className="container mx-auto flex max-w-7xl flex-col items-center gap-10 px-4">
         <div className="grid w-full grid-cols-1 overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-400/5 md:grid-cols-2">
           <div className="flex flex-col justify-between gap-10 p-8 md:p-10">

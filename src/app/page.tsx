@@ -1,29 +1,21 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import TheProblem from "@/components/sections/TheProblem";
-import WhyDimmo from "@/components/sections/WhyDimmo";
-import WhatYouGet from "@/components/sections/WhatYouGet";
-import ForTechnologyPartners from "@/components/sections/ForTechnologyPartners";
-import WhoWeWorkWith from "@/components/sections/WhoWeWorkWith";
-import NextStep from "@/components/sections/NextStep";
+import Hero from "@/components/blocks/home/Hero";
+import TheProblem from "@/components/blocks/home/TheProblem";
+import WhyDimmoIsDifferent from "@/components/blocks/home/WhyDimmoIsDifferent";
+import WhatYouGet from "@/components/blocks/home/WhatYouGet";
+import ForTechnologyPartners from "@/components/blocks/home/ForTechnologyPartners";
+import WhoWeWorkWith from "@/components/blocks/home/WhoWeWorkWith";
+import CTA from "@/components/blocks/home/CTA";
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden bg-[#FFFBFD]">
-      <Header />
-
-      <main>
-        <Hero />
-        <TheProblem />
-        <WhyDimmo />
-        <WhatYouGet />
-        <ForTechnologyPartners />
-        <WhoWeWorkWith />
-        <NextStep />
-      </main>
-
-      <Footer />
-    </div>
+    <>
+      <Hero />
+      <TheProblem />
+      <WhyDimmoIsDifferent />
+      <WhatYouGet />
+      <ForTechnologyPartners />
+      <WhoWeWorkWith />
+      <CTA />
+    </>
   );
 }

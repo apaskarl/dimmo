@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react";
+import Button from "@/components/ui/Button";
 
 export default function Hero() {
   return (
@@ -10,14 +10,8 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-2">
-          <a href="#" className="bg-primary hover:bg-primary/80 flex items-center gap-3 rounded-full px-8 py-3 text-sm font-medium text-slate-900 duration-300 md:text-base">
-            Book Your Free Tech Stack Audit
-            <Icon icon="tabler:arrow-right" width="20" height="20" />
-          </a>
-          
-          <a href="#" className="flex items-center gap-3 rounded-full border border-slate-300 bg-white/10 px-8 py-3 text-sm font-medium text-slate-900 backdrop-blur-xs duration-300 hover:bg-white/50 md:text-base">
-            View GTM Marketplace
-          </a>
+          <Button href="#" label="Book Your Free Tech Stack Audit" arrow primary />
+          <Button href="#" label="View GTM Marketplace" />
         </div>
       </div>
 
